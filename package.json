@@ -1,0 +1,21 @@
+{
+  "name": "graphql-tools-bug-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:untransformed": "node ./index.js 4000",
+    "start:transformed": "node ./index.js 4000 true"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-tools/load": "^7.0.0",
+    "@graphql-tools/url-loader": "^7.0.2",
+    "@graphql-tools/wrap": "^8.0.2",
+    "apollo-server": "^3.0.2",
+    "graphql": "^15.5.1"
+  }
+}
