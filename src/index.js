@@ -3,6 +3,8 @@ import { UrlLoader } from '@graphql-tools/url-loader';
 import { loadSchema } from '@graphql-tools/load';
 import { wrapSchema, RenameRootFields, RenameTypes} from "@graphql-tools/wrap";
 
+const [transformSchema] = process.argv.slice(2);
+
 export const getSchema = async () => {
   const schema = await loadSchema("https://api.spacex.land/graphql/", {
     loaders: [new UrlLoader()],

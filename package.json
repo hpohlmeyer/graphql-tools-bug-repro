@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start:untransformed": "node ./index.js 4000",
-    "start:transformed": "node ./index.js 4000 true"
+    "start:untransformed": "node ./src/index.js",
+    "start:transformed": "node ./src/index.js true"
   },
   "keywords": [],
   "author": "",

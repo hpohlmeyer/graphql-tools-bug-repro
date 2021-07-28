@@ -1,11 +1,11 @@
-# Setup
+## Setup
 
 1. Run `npm install`
-2. Run `npm run start`
+2. Run `npm run start:transformed`
 3. Go to `http://localhost:4000`
 4. Klick on the button to go to Apollo Studio
 
-# Reproduce the issue
+## Reproduce the issue
 
 The following query works as expected
 
@@ -100,3 +100,6 @@ query Test {
 </details>
 
 In this case all the fields are optional, but if they aren’t the query will fail, but even with optional fields, this is not the expected behavior.
+
+## Untransformed version
+You can get the untransformed version by running `npm run start:untransformed`.
